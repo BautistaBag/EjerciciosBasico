@@ -45,4 +45,8 @@ echo "<br>";
 echo rand(1,10);
 
 
+//include y required
+include(nombreArchivo.php); //incluye variables, funciones y todo lo que tenga el archivo nombreArchivo en este achivo que estoy escribiendo
+required(nombreArchivo.php); //incluye variables, funciones y todo lo que tenga el archivo nombreArchivo en este achivo que estoy escribiendo, pero si el archivo que incluyo esta mal, sigue ejecutando el codigo de abajo que le sigue
+
 ?>
