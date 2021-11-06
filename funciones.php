@@ -49,4 +49,11 @@ echo rand(1,10);
 include(nombreArchivo.php); //incluye variables, funciones y todo lo que tenga el archivo nombreArchivo en este achivo que estoy escribiendo
 required(nombreArchivo.php); //incluye variables, funciones y todo lo que tenga el archivo nombreArchivo en este achivo que estoy escribiendo, pero si el archivo que incluyo esta mal, sigue ejecutando el codigo de abajo que le sigue
 
+sort(arrayy); //Ordena el array arrayy
+rsort(array2); //Ordena el array array2 en orden inverso
+asort();//Ordena un array y mantiene la asociacion de indices
+arsort();//Ordena un array en orden inverso y mantiene la asociacion de indices
+count(array3); //Cuenta los elementos del array array3
+
+
 ?>
