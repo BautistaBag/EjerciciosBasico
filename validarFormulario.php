@@ -18,16 +18,19 @@ $direccion = $_POST['direccion'];
   </style>
 </head>
 <body>
+  <!--Los if que estan dentro de los value son para el caso que se complete ese campo, 
+pero que algun otro campo no sea valido, entonces la pagina(fuente) se reiniciaria  pero se seguiria mostrando los valores validos-->
+
 <form action="formulario.php" method="post">
 <h1>Promedios</h1>
 <label for="">Nombre: </label>
-<input type="text" name="nombre">
+<input type="text" name="nombre" value="<? if(isset($nombre)) echo $nombre?>">
 
 <label for="">Apellido: </label>
-<input type="text" name="apellido">
+<input type="text" name="apellido" value="<? if(isset($apellido)) echo $apellido?>">
 
 <label for="">Direccion: </label>
-<input type="text" name="direccion">
+<input type="text" name="direccion" value="<? if(isset($direccion)) echo $direccion?>">
 
 <input type="submit" value="Enviar"name="submit">
 </form>
